@@ -101,7 +101,7 @@
             // inputRichTextBox
             // 
             this.inputRichTextBox.BackColor = System.Drawing.Color.Black;
-            this.inputRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inputRichTextBox.DetectUrls = false;
             this.inputRichTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.inputRichTextBox.EnableAutoDragDrop = true;
@@ -142,7 +142,7 @@
             // resultRichTextBox
             // 
             this.resultRichTextBox.BackColor = System.Drawing.Color.Black;
-            this.resultRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.resultRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.resultRichTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.resultRichTextBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.resultRichTextBox.ForeColor = System.Drawing.Color.White;
