@@ -447,7 +447,7 @@ namespace PlagiarismChecker
                     hashedWordSequences.Add(hash, originalIndex);
                 }
 
-                hash = ((hash - wordHashes[i] * pPowsForWord[sensitivity - 1]) * pForWord + wordHashes[i + sensitivity]) % mForWord;
+                hash = ((hash - wordHashes[i] * pPowsForWord[(sensitivity - 1) % powsAmountForWord]) * pForWord + wordHashes[i + sensitivity]) % mForWord;
             }
         }
 
@@ -530,7 +530,7 @@ namespace PlagiarismChecker
                     }
                 }
 
-                hash = ((hash - wordHashes[i] * pPowsForWord[sensitivity - 1]) * pForWord + wordHashes[i + sensitivity]) % mForWord;
+                hash = ((hash - wordHashes[i] * pPowsForWord[(sensitivity - 1) % powsAmountForWord]) * pForWord + wordHashes[i + sensitivity]) % mForWord;
             }
 
             int commonMatchCount = wordMatchIndex.Count(c => c != -1);
